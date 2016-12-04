@@ -58,11 +58,6 @@ class TestNavigate(unittest.TestCase):
         self.nav.travel(3)
         self.assertTrue(self.nav.location[self.nav.facing] == 3)
 
-        # check that backtracking works on the original facing
-        self.nav.facing = 'north'
-        self.nav.travel(-2)
-        self.assertTrue(self.nav.location[self.nav.facing] == 2)
-
     def test_distance(self):
         """ make sure we track distance from the origin correctly """
         # R2 L3 - 5 blocks away

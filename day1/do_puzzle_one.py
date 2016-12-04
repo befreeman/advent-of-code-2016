@@ -14,3 +14,4 @@ for direction in open('puzzle_one_data.txt', 'r').read().split(' '):
         nav.travel_left(distance)
 
 print(nav.get_distance())
+print(nav.easter_bunny_hq_distance)
