@@ -4,7 +4,8 @@ Let's solve the first puzzle from Advent of Code!
 
 
 class Navigate(object):
-    """ """
+    """ hold the logic for navigating the AoC puzzle 1 directions """
+
     def __init__(self):
         """ create the state for navigation """
         self.location = {
@@ -49,6 +50,7 @@ class Navigate(object):
         self.travel(distance)
 
     def _get_grid_coordinates(self):
+        """ convert the location dictionary to x / y coordinates """
         x = self.location['north'] - self.location['south']
         y = self.location['east'] - self.location['west']
         return x, y

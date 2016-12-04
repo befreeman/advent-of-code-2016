@@ -13,5 +13,5 @@ for direction in open('puzzle_one_data.txt', 'r').read().split(' '):
     else:
         nav.travel_left(distance)
 
-print(nav.get_distance())
-print(nav.easter_bunny_hq_distance)
+print('Answer 1: {0}'.format(nav.get_distance()))
+print('Answer 2: {0}'.format(nav.easter_bunny_hq_distance))
