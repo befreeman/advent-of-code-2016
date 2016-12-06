@@ -31,13 +31,8 @@ columns = column_one
 
 for a, b, c in zip(*[iter(columns)]*3):
 
-    # makes sides
-    sides = [a, b, c]
-
     # check each pair of sides
-    if  sides[0] + sides[1] > sides[2] and \
-        sides[0] + sides[2] > sides[1] and \
-        sides[1] + sides[2] > sides[0]:
+    if a + b > c and a + c > b and b + c > a:
 
         # we have a triangle
         triangles = triangles + 1
