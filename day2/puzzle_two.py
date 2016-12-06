@@ -50,5 +50,6 @@ class Keypad(object):
         """ move right on the keypad """
         # make sure we don't go past the keypad length
         # just in case it might change
-        if self.column < len(self.keypad) - 1:
+        if self.column < len(self.keypad) - 1 and \
+        self.keypad[self.row][self.column + 1] != 0:
             self.column = self.column + 1
